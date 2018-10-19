@@ -1,0 +1,35 @@
+
+<div class="container-fluid ">
+  <div class="row">
+    <div class="col-sm-3">
+      <app-vertical-nav></app-vertical-nav>
+    </div>
+
+    <div class="col-sm-9">
+     <div class="container" [@listAnimation]="items.length">
+
+<button class="btn btn-primary" (click)="pushItem()"> Add Item</button>
+<button class="btn btn-info" (click)="popItem()"> Remove Item</button>
+
+<div id="list" *ngFor="let item of items">
+	<div class="col-lg=12">
+	{{ item }}
+	</div>
+</div>
+
+<!--<div [@movingX]>
+      <div class="col">
+        <p>I think Coursetro is one of the best learning resources online for Angular</p>
+      </div>
+      <div class="col">
+        <p>I think Coursetro is one of the best learning resources online for Angular</p>
+      </div>
+      <div class="col">
+        <p>I think Coursetro is one of the best learning resources online for Angular</p>
+      </div>
+    <div>
+  </div>-->
+  
+</div>
+</div>
+

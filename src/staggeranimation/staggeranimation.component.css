@@ -1,0 +1,14 @@
+#list{
+padding:1em;
+display: block;
+background: #fff;
+margin-bottom: 10px;
+border:1px solid orange;
+}
+
+ .col {
+        width:33%;
+        display:inline-block;
+        padding:40px 0;
+        color:gray;
+    }
